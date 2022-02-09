@@ -1,0 +1,72 @@
+.produto{
+    height: auto;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    z-index: 5;
+}
+
+#codProduto{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#descricaoProduto{
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+#botoes{
+    margin-top: 15px;
+    margin-left: 5px;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#editarProd{
+    color: white;
+    background-color: rgb(3, 134, 209);
+    padding: 3px;
+    border: 1px solid rgb(0, 68, 146);
+    margin-right: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#excluirProd{
+    color: white;
+    background-color: rgb(214, 16, 2);
+    padding: 3px;
+    border: 1px solid rgb(129, 9, 0);
+    margin-right: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+#detalhesProd{
+    color: white;
+    background-color: rgb(214, 175, 2);
+    padding: 3px;
+    border: 1px solid rgb(156, 107, 0);
+    margin-right: 5px;
+    font-size: 14px;
+     cursor: pointer;
+}
+
+#precoProd{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: rgb(206, 175, 0);
+}
+
+#dataProd{
+    margin-left: 5px;
+}
