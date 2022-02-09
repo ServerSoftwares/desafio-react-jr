@@ -24,11 +24,13 @@ app.get("/produtos",(req,res)=>{
     const query = "SELECT * FROM produtos";
     db.query(query, (err,result)=>{
         res.json({result: result})
-        });
-    });  
+    });
+    
+});  
 
 
-    app.post("/produtos", (req, res)=>{
+app.post("/produtos", (req, res)=>{
+
         const produto = req.body
         var dia_atual = new Date();
         var data_cadastro = dia_atual.getFullYear();
@@ -39,47 +41,46 @@ app.get("/produtos",(req,res)=>{
         
         res.json({result: result})
         });
+});
+
+
+app.get("/produtos/:codigo",(req,res)=>{
+        const {codigo} = req.params;
+        query = "SELECT * FROM produtos WHERE codigo = ?"     
+
+        db.query(query,[codigo],(err,result)=>{
+        
+        res.json({result: result})
+
+    });
+});  
+
+
+app.delete("/produtos/:codigo",(req,res)=>{
+    
+         const {codigo} = req.params;
+                 
+         query = "DELETE FROM produtos WHERE codigo=?"
+                
+         db.query(query,[codigo],(err,result)=>{
+        
+            res.json({result: result})
         });
 
-
-        app.get("/produtos/:codigo",(req,res)=>{
-            const {codigo} = req.params;
-            query = "SELECT * FROM produtos WHERE codigo = ?"     
-
-            db.query(query,[codigo],(err,result)=>{
-        
-                res.json({result: result})
-                });
-            });  
+})
 
 
-            app.delete("/produtos/:codigo",(req,res)=>{
-                const {codigo} = req.params;
-                 
-                query = "DELETE FROM produtos WHERE codigo=?"
-                db.query(query,[codigo],(err,result)=>{
-        
-                    res.json({result: result})
-                    });
-            })
+app.patch("/produtos/:codigo",(req,res)=>{
 
-            app.patch("/produtos/:codigo",(req,res)=>{
+        const produto = req.body
+        const {codigo} = req.params;
+        const query = "UPDATE produtos SET  descricao = ?, preco = ?  WHERE codigo = ?";
 
+        db.query(query,[produto.descricao, produto.preco, codigo],(err,result)=>{
+        res.json({result: result})
 
-                const {codigo} = req.params;
-                const query = "UPDATE produtos SET set descricao = ?, preco = ?  WHERE codigo = ?";
-
-                db.query(query,[produto.descricao, produto.preco, codigo],(err,result)=>{
-
-                    res.json({result: result})
-
-                    });
-
-            })
-
-
-            
-
+    });
+})
 
 
 app.listen(PORT,()=>{
