@@ -7,10 +7,10 @@ const mysql = require('mysql');
 const PORT = 3001;
 
 const db = mysql.createPool({
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'Reidekonoh@753',
-    database: 'desafio',
+    host: '',
+    user: '',
+    password: '',
+    database: '',
 })
 
 app.use(cors())
