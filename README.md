@@ -47,4 +47,8 @@ Cada item da lista precisa ter ações de editar, excluir e detalhes. Ao clicar 
 
 - **Opcional**: Separar a camada de comunicação com o banco da camada da API (controller)
 
+<<<<<<< HEAD
 - **Opcional**: Rodar o backend e o banco de dados em um container.
+=======
+- **Opcional**: Rodar o backend e o banco de dados em um container.
+>>>>>>> 5be68c0743f8e6d29513119136f9a6ed3ffaee97
