@@ -1,0 +1,26 @@
+{
+    "name": "desafio-react-jr-1",
+    "version": "1.0.0",
+    "description": "- Você deve realizar o fork deste projeto e desenvolver as aplicações conforme descrito abaixo\r - Faça o checkout do fork e desenvolva sua aplicação localmente\r - Após finalizar o desenvolvimento, realize um pull request para o nosso repositório",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon ./index.js localhost 3000"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LucasbarthTi/desafio-react-jr.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LucasbarthTi/desafio-react-jr/issues"
+    },
+    "homepage": "https://github.com/LucasbarthTi/desafio-react-jr#readme",
+    "dependencies": {
+        "express": "^4.17.3",
+        "mongoose": "^6.2.9",
+        "nodemon": "^2.0.15"
+    }
+}
