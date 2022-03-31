@@ -15,10 +15,12 @@ class App extends Component{
     this.setState({produtos: response.data})
    
   }
+  
 
   render(){
 
     const { produtos } = this.state;
+    
     return(
       <div>
         <h1>Listar os produtos</h1>
@@ -32,8 +34,7 @@ class App extends Component{
             <p>
             <strong>Descrição: </strong>
               {produto.descricao}
-              <button className="btn" href="#">Editar</button>
-              <button className="btn">excluir</button>
+              <button className="btn" >Editar</button>
               <button className="btn">detalhes</button>
             </p>
 
