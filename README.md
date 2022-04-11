@@ -2,7 +2,7 @@
 
 ## Passos para realizar o desafio
 
-- Você deve criar um repositório com para esse desafio. 
+- Você deve criar um repositório para esse desafio. 
 - Desenvolver as aplicações conforme descrito abaixo.
 - Após finalizar, faça o push para seu repositório, revise seu código e envie por e-mail o endereço do repositório para que possamos analisar o código.
 
