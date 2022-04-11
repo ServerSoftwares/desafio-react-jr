@@ -2,9 +2,11 @@
 
 ## Passos para realizar o desafio
 
-- Você deve realizar o fork deste projeto e desenvolver as aplicações conforme descrito abaixo
-- Faça o checkout do fork e desenvolva sua aplicação localmente
-- Após finalizar o desenvolvimento, realize um pull request para o nosso repositório
+- Você deve criar um repositório com para esse desafio. 
+- Desenvolver as aplicações conforme descrito abaixo.
+- Após finalizar, faça o push para seu repositório, revise seu código e envie por e-mail o endereço do repositório para que possamos analisar o código.
+
+
 
 # Descritivo do desafio
 
